@@ -1,0 +1,110 @@
+/* code by John Rey Vilbar 
+for hiding and showing certain HTML objects
+for print feature of the IS */
+
+html {
+print-color-adjust: exact;
+}
+
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+    color-adjust: exact !important;                 /* Firefox 48 – 96 */
+    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+}
+
+@media print {
+    html, body {
+    height: 100%; 
+    overflow: hidden;
+    }
+    .personPage {
+    height: auto;
+    overflow: inherit;
+    }
+}
+
+/* footer */
+@media screen {
+    .printTextLeft {
+    display: none;
+    }
+    .printTextRight {
+    display: none;
+    }
+}
+
+@media print {
+    .printTextLeft {
+    display: block;
+    }
+    .printTextRight {
+    display: block;
+    }
+    .mainFooter {
+    visibility: hidden;
+    }
+}
+
+/* customized print headers */
+@media screen{
+    .alt-title {
+    display: none;
+    }
+    .header-title {
+    display: block;
+    }
+    .main-title {
+    display: block;
+    }
+    .table-title {
+    display: block;
+    }
+    .alt-table-title {
+    display: none;
+    }
+
+}
+
+@media print {
+    .alt-title {
+    display: block;
+    }
+    .header-title {
+    display: none;
+    }
+    .main-title {
+    display: none;
+    }
+    #dataTable_length {
+    display: none;   
+    }
+    #dataTable_filter {
+    display: none;
+    }
+    #accountsPlayedTable_filter {
+    display: none;
+    }
+    .table-title {
+    display: none;
+    }
+    .alt-table-title {
+    display: block;
+    }
+    #dataTable_paginate {
+    display: none;
+    }
+    .select-checkbox {
+    display: none;
+    }
+    .remove-btn {
+    display: none;
+    }
+    td.text-center {
+    display: none;
+    }
+    /*page background color*/
+    #wrapper #content-wrapper {
+    background-color: transparent;
+    }
+}
+

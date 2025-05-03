@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Axie Tracker System | Quick Check interface">
+    <meta name="author" content="John Rey Vilbar">
+
+    <title>Axie Tracker System | Quick Check</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">
+
+    <!-- Font awesome -->
+    <link href="vendor/fontawesome-free/css/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/brands.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/solid.css" rel="stylesheet" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+    <!-- to enable Eel framework-->
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <!-- THIS IS IMPORTANT for printing-->
+    <link href="css/printing.css" rel="stylesheet">
+
+    <style>
+        @media screen{
+            #labelAccountID{
+                display: none;
+            }
+        }
+        @media print{
+            /* issue sa Chart.js >> fix sa 442 blank pages na ginaprint */
+            html, body {
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            /* https://stackoverflow.com/a/75079615 */
+            .chartjs-size-monitor{
+                position:fixed !important;
+            }
+            #labelAccountID{
+                display: block;
+            }
+        }
+    </style>
+
+
+</head>
+
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="navbar-scholar">Scholar ID:</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+        
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+
+
+                <!-- Begin Page Content -->
+                <div class="container">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 header-title" id="header-title">Welcome, </h1>
+                        <!--hidden alt title on print-->
+                        <h1 class="h3 mb-0 text-gray-800 alt-title" id="alt-title">____</h1>
+
+                        <span class="badge badge-pill badge-secondary" style="font-family: monospace;" id="labelAccountID">test</span>
+
+
+                        <a onclick="generateReport()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm d-print-none"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Print page</a>
+                    </div>
+
+
+                    <!-- QUICK STATS -->
+                    <div class="row">
+
+                        <!-- SLP today -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2 animated--grow-in utilities-animation">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">SLP Today
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><span id="slp-today">0</span> SLP</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-coins fa-3x fa-beat-fade text-warning" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.025;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- SLP yesterday -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-secondary shadow h-100 py-2 animated--grow-in utilities-animation">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-secondary text-uppercase mb-1">SLP Yesterday
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><span id="slp-yesterday">0</span> SLP</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-coins fa-3x fa-beat-fade text-secondary" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.025;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STATUS -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2 animated--grow-in utilities-animation" id="status-card">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1" id="status-title">Status
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                        <!--spinner-->
+                                                    <div class="ml-2" id="spinnerStatus">
+                                                        <div class="spinner-border spinner-border-sm text-secondary" role="status">
+                                                            <span class="sr-only">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 d-none" id="scholar-status">...</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-user fa-3x fa-beat-fade text-info" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.025;" id="status-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Earnings Current Month -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2 animated--grow-in utilities-animation">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" id="header-current-month">Earnings:</div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><span id="earnings-current-month">0</span> SLP</div>
+                                                    <div class="text-xs mb-0 mr-3 font-weight-bold text-gray-800">approx. PHP <span id="slp-to-pesos">0.00</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-wallet fa-3x fa-beat-fade text-primary" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.025;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+   
+                    <!-- Daily Earnings (7 days) -->
+                    <div class="card shadow mb-4">
+                        <div
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Weekly activity</h6>
+                            
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body d-flex justify-content-center">
+                            <!--spinner-->
+                            <div class="d-flex justify-content-center" id="spinner">
+                                <div class="spinner-border spinner-border-sm text-secondary" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <!--if there is no quota record to visualize-->
+                            <h6 style="display:none" id="noQuotaRecord" class="text-align-center">
+                                No record is found. Start playing now to earn SLP.</h6>
+
+                            <div class="chart-area d-none" id="chart">
+                                <canvas id="dailyEarningsGraph"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-sm-flex align-items-center justify-content-between mt-5 mb-4 d-print-none">
+                        <h1 class="h3 mb-0 text-gray-800">Your historical record</h1>
+                    </div>
+
+
+                    <!-- Recent quota record -->
+                    <div class="row">
+                        <div class="col-lg-12 mb-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Recent quota record</h6>
+                                </div>
+                                <div class="card-body d-flex justify-content-center">
+
+                                    <!--spinner-->
+                                    <div class="d-flex justify-content-center" id="spinner2">
+                                        <div class="spinner-border spinner-border-sm text-secondary" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- IF no quota record is found -->
+                                    <h6 style="display:none" id="quotaRecordAlt">
+                                        Nothing to show here. Play now.
+                                    </h6>
+
+                                    <!-- Else -->
+                                    <table class="table table-borderless d-none" id="quotaRecordTable">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">SLP minted</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- to be populated by Javascript -->
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <img class="printTextLeft float-left mr-2" style="width: 10px; height: 10px;"
+                        src="data:image/png;base64,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" />
+                        <span class="printTextLeft float-left">Axie Tracker System (Alpha) | Scholar Report</span>
+                        <span class="mainFooter">the.encoder.frost 2023</span>
+                        <span class="printTextRight float-right" id="right-footer">Printed on</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!--PAGE SPECIFIC SCRIPT-->
+    <script src="js/quick-check.js"></script>
+
+
+
+</body>
+
+</html>

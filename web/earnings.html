@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Axie Tracker System | Dashboard interface">
+    <meta name="author" content="John Rey Vilbar">
+
+    <title>Axie Infinity Tracker | Earnings</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">
+
+    <!-- Font awesome -->
+    <link href="vendor/fontawesome-free/css/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/brands.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/solid.css" rel="stylesheet" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- to enable Eel framework-->
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <!-- PRINTING -->
+    <link href="css/printing.css" rel="stylesheet">
+
+    <!-- CSS animations -->
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet"> <!-- animate__animated animate__class; see https://animate.style/ -->
+    <link href="vendor/hover.css/hover.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/transition.css/transition.wipes.min.css">
+    <link rel="stylesheet" href="vendor/transition.css/transition.min.css">
+
+    <style>
+        /* issue sa Chart.js >> fix sa 442 blank pages na ginaprint */
+        @media print{
+            html, body {
+
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /* https://stackoverflow.com/a/75079615 */
+            .chartjs-size-monitor{
+                position:fixed !important;
+            }
+        }
+    </style>
+
+        
+
+</head>
+
+<body id="page-top">
+
+    <!--I placed this code here para seamless ang pagcreate sa transition element -->
+    <script>
+        if(sessionStorage.getItem('managerFirstLogin') == 'true'){
+            //create a div to transition to the dashboard
+            var div = document.createElement("div");
+            div.setAttribute("transition-style", "out:wipe:up");
+            div.setAttribute("class", "bg-secondary");
+            div.setAttribute("style", "position: absolute; top: 0; left: 0; z-index: 10000; width: 100%; height: 100%;;");
+            document.body.appendChild(div);
+        }
+    </script>
+
+    <!--
+    <div class="bg-secondary" id="pageTransition" transition-style="out:wipe:up" style="position: absolute; z-index: 10000; top: 0; left: 0; width: 100%; height: 100%; background-color: grey;">
+    </div>
+    -->
+    
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion d-print-none" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center hvr-bounce-in" href="#">
+    
+                <div class="sidebar-brand-text mx-auto">Axie<br>Tracker <span class="badge badge-pill badge-warning text-gray-800">ALPHA</span></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Dashboard -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <div class="sidebar-heading">
+                Registered entities
+            </div>
+            
+            <!-- PERSONS -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="person.html">
+                    <i class="fa-solid fa-fw fa-user"></i>
+                    <span>Persons</span></a>
+            </li>
+
+            <!-- Scholars -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="scholar.html">
+                    <i class="fa-solid fa-fw fa-users"></i>
+                    <span>Scholars</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                YOUR ASSETS
+            </div>
+
+            <!-- Accounts -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="account.html">
+                    <i class="fa-solid fa-fw fa-gamepad"></i>
+                    <span>Accounts</span></a>
+            </li>
+
+            <!-- Quota -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="quota.html">
+                    <i class="fa-solid fa-fw fa-table-list"></i>
+                    <span>Quota</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">YOUR PROFIT</div>
+
+            <!-- Earnings -->
+            <li class="nav-item active hvr-forward">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-peso-sign"></i>
+                    <span>Earnings</span></a>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle animate__animated animate__fadeInRight" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="manager-name">Manager</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+
+
+                <!-- Begin Page Content -->
+                <div class="container">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 main-title animate__animated animate__fadeInLeft">Your revenue</h1>
+                        <!--hidden alt title-->
+                        <h1 class="h3 mb-0 text-gray-800 alt-title">Your earnings</h1>
+                        <a onclick="generateReport()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm d-print-none  animate__animated animate__fadeInRight"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Print page</a>
+                    </div>
+
+
+                    <!-- QUICK STATS -->
+                    <div class="row">
+
+                        <!-- profit today -->
+                        <div class="col-xl-3 col-md-6 mb-4 animate__animated animate__zoomIn animate__faster">
+                            <div class="card border-bottom-success shadow h-100 py-2 hvr-float">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Profit Today
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 d-flex align-items-center">PHP <span class="ml-1" id="earnings-today">0.00</span>
+                                                        <div class="spinner-border text-success spinner-border-sm ml-2" role="status" id="spinnerProfitToday">
+                                                            <span class="sr-only">Loading...</span>
+                                                          </div>
+                                                    </div>
+                                                    <div class="text-xs mb-0 mr-3 font-weight-bold text-gray-800" id="earnings-today-slp">
+                                                        SLP minted: <span id="slp-today">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-peso-sign fa-3x fa-beat-fade text-success" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.025;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings Current Month -->
+                        <div class="col-xl-3 col-md-6 mb-4 animate__animated animate__zoomIn animate__faster">
+                            <div class="card border-bottom-success shadow h-100 py-2 hvr-float">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1" id="header-current-month">Earnings: </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 d-flex align-items-center">PHP <span id="earnings-current-month" class="ml-1">0.00</span>
+                                                        <div class="spinner-border text-success spinner-border-sm ml-2" role="status" id="spinnerProfitMonth">
+                                                            <span class="sr-only">Loading...</span>
+                                                          </div>
+                                                    </div>
+                                                    <div class="text-xs mb-0 mr-3 font-weight-bold text-gray-800">
+                                                        SLP minted: <span id="slp-month">0</span>
+                                                    </div>
+                                                </div>
+                                           
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fa-solid fa-wallet fa-3x fa-beat-fade text-success" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.025;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+            
+                    <!-- Daily Earnings -->
+                    <div class="card shadow mb-4 ">
+                        <div
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Profit for past 7 days</h6>
+                            
+                        </div>
+                        <!-- Card Body -->
+                        <div class="card-body d-flex justify-content-center">
+                            <!--spinner-->
+                            <div class="d-flex justify-content-center" id="spinner">
+                                <div class="spinner-border spinner-border-sm text-secondary" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+
+                            <!--if there is no quota record to visualize-->
+                            <h6 style="display:none" id="noQuotaRecord" class="text-align-center">
+                                No record is found. Start playing now to mint SLP.</h6>
+
+                            <div class="chart-area d-none" id="chart">
+                                <canvas id="dailyEarningsGraph"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <img class="printTextLeft float-left mr-2" style="width: 10px; height: 10px;"
+                        src="data:image/png;base64,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" />
+                        <span class="printTextLeft float-left">Axie Tracker System (Beta) | Manager Report</span>
+                        <span class="mainFooter">the.encoder.frost 2023</span>
+                        <span class="printTextRight float-right" id="right-footer">Printed on {time}</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- reset dialog -->
+    <div class="modal fade" id="resetModal" tabindex="-1" role="dialog" aria-labelledby="resetPreferencesLabel" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resetPreferencesLabel">Ready to clear?</h5>
+                </div>
+
+                <div class="modal-body">
+                    This will reset the preferences set in this system. This action cannot be undone.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.js"></script>
+
+
+    <!-- page-specific  -->
+    <script src="js/earnings.js"></script>
+
+
+
+</body>
+
+</html>

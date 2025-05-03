@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Axie Tracker System | Dashboard interface">
+    <meta name="author" content="John Rey Vilbar">
+
+    <title>Axie Tracker System | Your Scholars</title>
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">
+
+    <!-- Font awesome -->
+    <link href="vendor/fontawesome-free/css/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/brands.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/solid.css" rel="stylesheet" type="text/css">
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- to enable Eel framework-->
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <!-- PRINTING -->
+    <link href="css/printing.css" rel="stylesheet">
+
+    <!-- CSS animations -->
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+    <!-- animate__animated animate__class; see https://animate.style/ -->
+    <link rel="stylesheet" href="vendor/hover.css/hover.css">
+
+    <!-- page specific custom style -->
+    <link href="css/scholar.css" rel="stylesheet">
+
+    
+
+</head>
+
+<body id="page-top" class="personPage">
+
+    
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion d-print-none" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center hvr-bounce-in" href="#">
+                <div class="sidebar-brand-text mx-auto">Axie<br>Tracker <span class="badge badge-pill badge-warning text-gray-800">ALPHA</span></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+
+            <!-- PERSONS -->
+            <div class="sidebar-heading">
+                Registered entities
+            </div>
+            
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="person.html">
+                    <i class="fa-solid fa-fw fa-user"></i>
+                    <span>Persons</span></a>
+            </li>
+
+
+
+            <li class="nav-item active hvr-forward">
+                <a class="nav-link" href="#">
+                    <i class="fa-solid fa-fw fa-users"></i>
+                    <span>Scholars</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                YOUR ASSETS
+            </div>
+
+            <!-- Accounts -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="account.html">
+                    <i class="fa-solid fa-fw fa-gamepad"></i>
+                    <span>Accounts</span></a>
+            </li>
+
+            <!-- Quota -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="quota.html">
+                    <i class="fa-solid fa-fw fa-table-list"></i>
+                    <span>Quota</span></a>
+            </li>
+
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">YOUR PROFIT</div>
+            
+            <!-- Earnings -->
+            <li class="nav-item hvr-forward">
+                <a class="nav-link" href="earnings.html">
+                    <i class="fas fa-fw fa-peso-sign"></i>
+                    <span>Earnings</span></a>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content" style="overflow: hidden;">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle animate__animated animate__fadeInRight" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small" id="manager-name">Manager</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#userPreferences" onclick="preferencesModal()">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Preferences
+                                </a>
+        
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 main-title animate__animated animate__fadeInLeft">Scholars in your guild</h1>
+                        <!--hidden alt title-->
+                        <h1 class="h3 mb-0 text-gray-800 alt-title">Scholars record</h1>
+                        <a onclick="generateReport()" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm d-print-none animate__animated animate__fadeInRight"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Print page</a>
+                    </div>
+
+                    <!--
+                    <div class="d-flex ">
+                        <div class=" col-lg-6">
+                            <div class="card shadow mb-4">
+                              
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+                                </div>
+                        
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas id="myPieChart" width="244" height="247" style="display: block; height: 216px; width: 213px;" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <hr>
+                                    Styling for the donut chart can be found in the
+                                    <code>/js/demo/chart-pie-demo.js</code> file.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                    <!-- Main table -->
+                    <div class="card shadow mb-5 animate__animated animate__fadeIn">
+                        <div class="card-header container-fluid">
+                            <h5 class="m-0 font-weight-bold text-primary table-title">
+
+                                <a href="#" class="btn btn-sm float-right btn-danger btn-icon-split d-print-none disabled" style="margin-left: 1em"
+                                    data-toggle="modal" data-target="#deleteEntryModal" id="removeBtn" onclick="modalButtons('scholarRemove')">
+                                    <span class="icon text-white-50"><i class="fas fa-trash"></i></span>
+                                    <span class="text">Remove</span>
+                                </a>
+
+                                <a href="#" class="btn btn-sm float-right btn-primary btn-icon-split d-print-none disabled" style="margin-left: 1em" 
+                                data-toggle="modal" data-target="#editEntryModal" id="updateBtn" onclick="modalButtons('scholarUpdate')">
+                                <span class="icon text-white-50"><i class="fas fa-pen-to-square"></i></span>
+                                <span class="text">Update</span>
+                                </a>
+
+                                <a href="#" class="btn btn-sm float-right btn-primary btn-icon-split d-print-none" style="margin-left: 1em" 
+                                    data-toggle="modal" data-target="#addEntryModal" onclick="modalButtons('scholarAssign')">
+                                    <span class="icon text-white-50"><i class="fas fa-add"></i></span>
+                                    <span class="text">Assign</span>
+                                </a>
+
+
+
+                            </h5>
+                            <!-- Alternate title on print-->
+                            <h5 class="m-0 font-weight-bold text-primary alt-table-title" id="table-title"> </h5>
+                        </div>
+
+                        <!--Scholar table-->
+                        <div class="card-body">
+
+                            <!--spinner-->
+                            <div class="d-flex justify-content-center" id="spinner">
+                                <div class="spinner-border spinner-border text-secondary" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+
+                            <!--if no scholars-->
+                            <h6 style="display:none" id="noScholarRecord" class="text-align-center">
+                                No record is found. Assign scholars to your guild.</h6>
+
+                            <!--table-->
+                            <div class="table-responsive d-none" id="dataTableContainer">
+                                <table class="table table-bordered display" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Scholar ID</th>
+                                            <th>Name</th>
+                                            <th>Contract (%)</th>
+                                            <th>SLP Share</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--JS will to the magic-->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Accounts Played table -->
+                    <div class="row">
+                        <div class="col-lg-12 mb-4 animate__animated animate__fadeIn">
+                            <div class="card shadow mb-4">
+                                <div class="card-header container-fluid d-flex align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Accounts played by the scholars</h6>
+
+                                    <a href="#" class="btn btn-sm float-right btn-primary btn-icon-split d-print-none"
+                                    data-toggle="modal" data-target="#assignAccount" onclick="modalButtons('scholarAssignAccount')">
+                                    <span class="icon text-white-50"><i class="fas fa-add"></i></span>
+                                    <span class="text">Assign</span>
+                                    </a>
+                                </div>
+
+                                <div class="card-body table-responsive">
+
+                                    <!--spinner-->
+                                    <div class="d-flex justify-content-center" id="spinner2">
+                                        <div class="spinner-border spinner-border text-secondary" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Else -->
+                                    <table class="table table-bordered display d-none" id="accountsPlayedTable" width="100%">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Account ID</th>
+                                        <th scope="col">Account email</th>
+                                        <th class="d-print-none"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- to be populated by Javascript -->
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Color System -->
+                            
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- /.container-fluid -->
+
+            
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <img class="printTextLeft float-left mr-2" style="width: 10px; height: 10px;"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACalBMVEUAAAD/AAAVnvwTcfsTufoRjfkS0vsRnfkS1PgTVPkRzfYSKfETzPkRKvUOEu8RwvSLkN8PE+4RwPP/Q6mbxOkQGu8Qv/b/G5J+rN8ON/QRoPn/AJCW3LwRffgSk/n/AG3/HZgQefgTg/kbp/sKfvwJbfwZcfoZuvkKs/0Esf4Dpv4Ik/0YjPcY0vkJzPwDyf4DsP4IkfwXoPcZ0fcJ3vwD4P4Da/wIXvsaUvcYy/QI0/gD6/0DQvkJNPYZKPAayfgIzPYDzvkDHfEIGvEYMfYam/oJwPoDsPcDIPMJG/AaIvEKgvsDjvoDM/QJcfkJPPUDJPEDl/oIqPoXEu8HDO8CFPADtPgIwvcWovQWGe8ICu4CEe8DzfsJyfYauvEYGu0ID+8CIfMD4P4JzPoZuvAZHu4II/MCPfkD0v4JxPsZufIXM/IIVfoDlf0Duf4JrfwamfUZe/UJjfwDmf4Dnf4JmfwZjPYYfPYJbvoKbPoaiPcCyf4C3/4CzP4Cn/0CefwB4P4Cqv0OfvoJYvoAUvsATvsDsP0qkfw5bPtRavYvafQlYfomYPoDNvcBdfsVVvuSwvyFpvlkXvRgePHR3vzJ2P0bUvkBLPUCXfoAUvxGg/ubt/lOb/GQq/jV1/yxo/3W1/1ThvwASvsCMvUCNvYAUPx9pvyds/ZlhvHa3/2jr/ZkVPeXsvw5dvsCVfgAMPZIePvn7/3Z0/6GT/5hRPZ7mPN8r/sNRvgCdfoLOPdVc/dFRfdPA/1RCP1HY/g6mPoDqPsAL/cBKvYbJPkZQPsBj/wC1f4CT/sBfv0Cuf4C0/8DuP8Duv////+Moq7FAAAAe3RSTlMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSqoxERm/37lA8Qmv38lQ8QmPz8lg8Pl/z8lw8Plvz8lxASlfv8mBOd+/ugqP39qxii/v2iGRSk/v2gFBWj/v2gExWk/v2gExWj/f2fExSf/fycEhasqxSASFL5AAAAAWJLR0TNbdCjRQAAAAlwSFlzAAAPYQAAD2EBqD+naQAAAAd0SU1FB+cBCw0zJO1EPZkAAAD8SURBVBjTY2AAAkYmZRVVNWYGOGBR19DU0tZhhfHZdPX0q6sNDI3YIXwOYxPTmtq6ejNzC04Qn8vSyrqhsam5pdXG1o6bgYHH3sGxrb2js6u7p9fJ2YWXwdXNva9/wsRJk6dMnTbdw9OLwdtnxsxZs+fMnTd/wcJFi339GPwDlixdtnzFylWr16xdui4wiCE4JHT9ho2bNm/Zum37jrDwCAa+yKjonbt279m7b/+BmNg4fgYBwfiExIOHDh85eiwpOUVImIFBRDQ1Lf34iZOnMjKzxMRBLpOQzM7JPX0mL79AShridhnZwqLiktIyOXmY7xQUyysqq5QYQWwAZYVS0AnbLXoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDEtMTFUMTM6NTE6MjUrMDA6MDBlhXMmAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTAxLTExVDEzOjUxOjI1KzAwOjAwFNjLmgAAACB0RVh0c29mdHdhcmUAaHR0cHM6Ly9pbWFnZW1hZ2ljay5vcme8zx2dAAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAGHRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAxOTJAXXFVAAAAF3RFWHRUaHVtYjo6SW1hZ2U6OldpZHRoADE5MtOsIQgAAAAZdEVYdFRodW1iOjpNaW1ldHlwZQBpbWFnZS9wbmc/slZOAAAAF3RFWHRUaHVtYjo6TVRpbWUAMTY3MzQ0NTA4NdheBoQAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAABWdEVYdFRodW1iOjpVUkkAZmlsZTovLy9tbnRsb2cvZmF2aWNvbnMvMjAyMy0wMS0xMS81YWNkZjg5OGJiYTE3NjdkZmIwY2I1ZmQ5OTQ5YTczYS5pY28ucG5nbnF+MwAAAABJRU5ErkJggg==" />
+                        <span class="printTextLeft float-left">Axie Tracker System (Beta) | Manager Report</span>
+                        <span class="mainFooter">the.encoder.frost 2023</span>
+                        <span class="printTextRight float-right" id="right-footer">Printed on {time}</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+    
+        </div>
+        <!-- End of Content Wrapper -->
+    
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+
+
+    <!-- MODALS -->
+    <!-- LOGOUT Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PREFERENCES modal -->
+    <div class="modal fade" id="userPreferences" tabindex="-1" role="dialog" aria-labelledby="userPreferencesLabel" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userPreferencesLabel">Preferences</h5>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="card">
+                        <div class="card-header">This value is used as default when adding a new scholar.</div>
+                        
+                        <div class="form-row px-3">
+                            <!-- default contract % -->
+                            <div class="card-body col-md-6">
+                                <div class="form-group">
+                                    <label for="defaultScholarContract">Default Contract (%)</label>
+                                    <input type="number" class="form-control" id="defaultScholarContract" placeholder="10-100"
+                                        onkeyup="if(parseInt(this.value)>100){ this.value =100; return false; }"
+                                        min="10" max="100" >
+                                        <div class="invalid-feedback">Illegal value (there's no free real state)</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary" type="submit"  id="savePreferences" onclick="savePreferences()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ASSIGN scholar modal -->
+    <div class="modal fade" id="addEntryModal" tabindex="-1" role="dialog" aria-labelledby="addEntryLabel" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addEntryLabel">Assign a person as scholar</h5>
+                </div>
+
+                <!--dataTable object-->
+                <div class="modal-body">
+                    <table class="table table-bordered display" id="assignScholarTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Person ID</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-primary disabled" type="submit"  id="assignBtn" onclick="modalActionButton('Assign')">Assign</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- UPDATE modal -->
+    <div class="modal fade" id="editEntryModal" tabindex="-1" role="dialog" aria-labelledby="editEntryLabel" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editEntryLabel">Update scholar information</h5>
+                </div>
+
+                <!-- Update form in modal -->
+                <form autocomplete="off" class="needs-validation" id="scholarUpdate" onsubmit="return false" novalidate>
+                    <div class="modal-body">
+                        <div class="form-row">
+
+                            <!--NAME-->
+                            <div class="form-group col-md-12">
+                                <label for="entryName">Name</label>
+                                <input type="text" class="form-control" id="inputName" spellcheck="false" disabled value="Test data">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!--CONTRACT (%) -->
+                            <div class="form-group col-md-6">
+                                <label for="updateContractPercentage">Contract (%)</label>
+                                <input type="text" class="form-control" id="inputContractPercentage" placeholder="10 - 100" spellcheck="false" 
+                                    onkeyup="if(parseInt(this.value)>100 || this.value.match(/^0+/) ){ this.value = null; return false; }" 
+                                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                                <div class="invalid-feedback">
+                                    Contract cannot be null.
+                                </div>
+                            </div>
+
+                            <!-- SCHOLAR SHARE -->
+                            <div class="form-group col-md-6">
+                                <label for="entryMobileNumber">Scholar share (autogenerated)</label>
+                                <input type="tel" class="form-control" id="inputScholarShare" value="0 SLP" disabled>
+                            </div>
+                        </div>
+
+                        <!--Notice-->
+                        <h6 class="px-1 mb-3 text-center">Note: Contract (%) will be applied to the scholar share on the next addition of quota record.</h6>
+
+                        <!-- Scholar ID -->
+                        <div class="d-flex justify-content-center mt-3">
+                            <h6>Scholar ID: 
+                                <span class="badge badge-pill badge-secondary" style="font-family: monospace; cursor: pointer;" id="labelScholarID" 
+                                onclick="copyToClipboard(document.getElementById('labelScholarID').innerText)"></span>
+                            </h6>
+                            
+                        </div>
+
+
+                        <hr>
+
+                        <!-- Generate QR code -->
+                        <button type="button" class="btn btn-secondary btn-sm btn-block mt-2" id="qrGeneratebtn"
+                            onclick="generateQrCode()">Generate QR code</button>
+                        
+                        <div class="d-flex justify-content-center">
+                            <div class="card d-none w-75" id="qrContainer">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center row">
+                                        <div id="qrcode" class="w-auto"></div>
+                                    </div>
+                                    <button type="button" class="btn btn-success btn-sm btn-block mt-2" id="saveQr">
+                                        <i class="fa-solid fa-circle-down"></i>
+                                        Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" type="submit" id="editBtnForm" onclick="modalActionButton('Update')">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- REMOVE modal -->
+    <div class="modal fade" id="deleteEntryModal" tabindex="-1" role="dialog" aria-labelledby="deleteEntryLabel" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="deleteEntryLabel">Remove role as scholar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to remove the selected items as scholar/s? This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-danger" onclick="modalActionButton('Delete')">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- ASSIGN account modal -->
+    <div class="modal fade" id="assignAccount" tabindex="-1" role="dialog" aria-labelledby="assignAccountLabel" data-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="assignAccountLabel">Assign account to scholar</h5>
+                </div>
+
+                <!-- Update form in modal -->
+                <form autocomplete="off" class="needs-validation" id="assignAccountForm" onsubmit="return false" novalidate>
+                    <div class="modal-body">
+                        <div class="form-row px-3">
+                            <!-- Scholar Name -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="assignAccountName">Scholar</label>
+                                    <select id="assignAccountName" class="form-control" required>
+                                        <!--to be filled by JavaScript-->
+                                    </select>
+                                    <div class="invalid-feedback">Scholar required</div>
+                                </div>
+                            </div>
+                            <!-- Account ID -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="assignAccountID">Account to be assigned</label>
+                                    <select id="assignAccountID" class="form-control" required>
+                                        <!--to be filled by JavaScript-->
+                                    </select>
+
+                                    <div class="invalid-feedback">Account required</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary " type="submit"  id="assignAccountBtn" onclick="modalActionButton('AssignAccount')">Assign</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- for toast.js -->
+    <script src="js/toast.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="vendor/datatables/dataTables.editor.min.js"></script>
+
+    <!-- My custom script for this page -->
+    <script src="js/scholar.js"></script>
+
+    <!-- jQuery UI for autocomplete -->
+    <script src="vendor/jquery-ui/jquery-ui.js"></script>
+
+    <!-- QR code plugin -->
+    <script src="vendor/EasyQRCodeJS/easy.qrcode.min.js"></script>
+    
+
+</body>
+
+</html>
