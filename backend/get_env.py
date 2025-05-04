@@ -1,5 +1,5 @@
 import os
-import logger
+import backend.logger as logger
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

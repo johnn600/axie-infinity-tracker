@@ -11,8 +11,8 @@ import platform
 import backend.database as db
 import backend.get_env as env
 import backend.user_login as user_login
-import hide_console
-import logger
+import backend.hide_console as hide_console
+import backend.logger as logger
 
 
 # Initialize python eel
@@ -68,7 +68,6 @@ if __name__ == '__main__':
     try:
         logger.logging.info("Python eel app launching...")
 
-        # Start the Eel app with the login page
         eel.start('login.html', 
                   mode='chrome', 
                   host='localhost', 

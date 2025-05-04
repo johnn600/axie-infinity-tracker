@@ -1,5 +1,5 @@
 import sqlite3 as sq
-import logger
+import backend.logger as logger
 import os
 
 from sqlite3 import Connection, Cursor
