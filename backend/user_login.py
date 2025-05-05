@@ -1,51 +1,55 @@
 import backend.database as db
+import backend.logger as logger
+import sqlite3
 
 
-def login_scholar(id: str) -> bool:
-    '''
-    Check if the scholarID exists in the SQLite database.
+def login_scholar(scholar_id: str) -> bool:
+    """
+    Check if the scholar ID exists in the SQLite database.
+
+    :param scholar_id: Scholar ID to check
+    :return: True if the scholar ID exists, False otherwise
+    """
+
+    cursor = db.get_cursor()
+    if not cursor:
+        return False
+
+    try:
+        query = "SELECT 1 FROM Scholar WHERE scholarID = ?"
+        result = cursor.execute(query, (scholar_id,)).fetchone()
+        return result is not None
     
-    :param id: Scholar ID to check
-    :return: True if the scholarID exists, False otherwise
-    '''
+    except sqlite3.Error as e:
+        logger.logging.error(f"Database error: {e}")
+        return False
+
+
+
+def login_manager(manager_id: str, manager_name: str) -> bool:
+    """
+    Check if a manager with the given ID and name exists in the database.
+
+    :param manager_id: Manager ID to check
+    :param manager_name: Manager name to check
+    :return: 
+    """
+
     cursor = db.get_cursor()
+    if not cursor:
+        return False
 
-    if cursor:
-        data = cursor.execute("select * from Scholar where scholarID = '{id}' "
-                            .format(id=id)).fetchall()
-        
-        if len(data) == 0:
-            return False
-        
-        else:
-            return True
+    try:
+        query = """
+            SELECT 1
+            FROM Person P
+            JOIN Manager M ON M.personID = P.personID
+            WHERE M.managerID = ? AND P.name = ?
+        """
+        result = cursor.execute(query, (manager_id, manager_name)).fetchone()
+        return result is not None
 
+    except sqlite3.Error as e:
+        logger.logging.error(f"Database error: {e}")
+        return False
 
-def login_manager(id: str, name: str) -> bool:
-    '''
-    Check if the managerID and name exist in the database.
-
-    :param id: Manager ID to check
-    :param name: Name to check
-    :return: True if the managerID and name exist, False if they do not exist
-    '''
-    cursor = db.get_cursor()
-
-    if cursor:
-        name = cursor.execute('''select name from Person P, Manager M where M.personID = P.personID
-                                and M.managerID = '{id}'    '''
-                                .format(id = id)).fetchall()
-        if len(name) == 0:
-            return False
-        
-        else:
-            id = cursor.execute('''select M.managerID from Person P, Manager M where M.personID = P.personID
-                                and P.name = '{name}'   '''
-                                .format(name=name)).fetchall()
-            
-            try:
-                if id[0][0] == id:
-                    return True
-                
-            except IndexError:
-                return False
