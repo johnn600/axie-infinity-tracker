@@ -1,3 +1,9 @@
+import {
+  validateInput,
+  setFormInvalid,
+  redirectToDashboard,
+} from "../pages/login.js";
+
 function quickBalance() {
   var inputQr = document.getElementById("inputScholarQr").value;
 
@@ -55,79 +61,33 @@ function quickBalance() {
   }
 }
 
-function loginManager() {
-  var managerName = document.getElementById("managerName").value;
-  var managerID = document.getElementById("managerID").value;
+// Logs in the manager using the manager ID and name
+async function loginManager() {
+  const validate = await validateInput();
 
-  if (managerName === "" || managerID === "") {
-    var managerForm = document.getElementById("loginManager");
-    managerForm.classList.add("was-validated");
+  if (validate) {
+    const managerID = document.getElementById("managerID").value;
+    const managerName = document.getElementById("managerName").value;
+    const response = await eel.login_manager(managerID, managerName)();
 
-    if ((managerName === "") & (managerID !== "")) {
-      shakeElement("managerName");
-    } else if ((managerID === "") & (managerName !== "")) {
-      shakeElement("managerID");
+    console.log("response: " + response);
+
+    if (response) {
+      redirectToDashboard("manager");
     } else {
-      shakeElement("managerName");
-      shakeElement("managerID");
+      setFormInvalid();
     }
-  } else {
-    eel.login_manager(
-      managerID,
-      managerName
-    )((data) => {
-      if (data === 1) {
-        //clears the invalid status when the inputs are valid
-        var managerForm = document.getElementById("loginManager");
-        managerForm.classList.add("was-validated");
-        document.getElementById("managerFormErrorMessage").innerHTML = "";
-
-        //check if captcha is checked
-        if (grecaptcha.getResponse() == "") {
-          //shake the captcha widget
-          shakeElement("rcaptcha");
-        } else {
-          //set the current session variables
-          window.sessionStorage.setItem("managerID", managerID);
-          window.sessionStorage.setItem("managerName", managerName);
-          window.sessionStorage.setItem("managerFirstLogin", true);
-          hideFormAndTransit("manager");
-        }
-      } else {
-        console.log("Manager account does not exist.");
-
-        var managerForm = document.getElementById("loginManager");
-        managerForm.classList.remove("was-validated");
-        document.getElementById("managerName").classList.remove("is-valid");
-        document.getElementById("managerID").classList.remove("is-valid");
-        document.getElementById("managerName").classList.add("is-invalid");
-        document.getElementById("managerID").classList.add("is-invalid");
-
-        document.getElementById("managerFormErrorMessage").innerHTML =
-          "Manager account does not exist.";
-        //managerForm.classList.add('was-validated');
-        shakeElement("managerName");
-        shakeElement("managerID");
-      }
-    });
   }
 }
+
+// Expose the functions to the global scope
+window.loginManager = loginManager;
 
 //remove animated class after animation of the main content
 const element = document.getElementById("mainContent");
 element.addEventListener("animationend", () => {
   element.classList.remove("animate__animated", "animate__bounceIn");
 });
-
-//animate (shake) the element
-function shakeElement(input) {
-  const element = document.getElementById(input);
-  element.classList.add("animate__animated", "animate__headShake");
-  //remove the animation class after animation to prevent conflicts
-  element.addEventListener("animationend", () => {
-    element.classList.remove("animate__animated", "animate__headShake");
-  });
-}
 
 function hideFormAndTransit(role) {
   console.log("role: " + role);
