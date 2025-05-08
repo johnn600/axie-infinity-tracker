@@ -88,36 +88,3 @@ const element = document.getElementById("mainContent");
 element.addEventListener("animationend", () => {
   element.classList.remove("animate__animated", "animate__bounceIn");
 });
-
-function hideFormAndTransit(role) {
-  console.log("role: " + role);
-
-  var form = document.getElementById("mainContent");
-  form.classList.add("animate__animated", "animate__bounceOut");
-  form.addEventListener("animationend", () => {
-    //hide the form
-    form.classList.add("d-none");
-    //create a div to transition to the dashboard
-    var div = document.createElement("div");
-    div.setAttribute("transition-style", "in:wipe:up");
-    div.setAttribute("class", "bg-secondary");
-    div.setAttribute(
-      "style",
-      "position: absolute; top: 0; left: 0; width: 100%; height: 100%;;"
-    );
-    document.body.appendChild(div);
-
-    //load the respective pages after 1 second
-    setTimeout(function () {
-      switch (role) {
-        case "manager":
-          window.location.href = "index.html";
-          break;
-
-        case "scholar":
-          window.location.href = "quick-check.html";
-          break;
-      }
-    }, 1000);
-  });
-}
