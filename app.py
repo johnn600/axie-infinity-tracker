@@ -5,14 +5,12 @@
 
 import eel
 import bottle
-import os
 import platform
 
 import backend.database as db
-import backend.get_env as env
-import backend.user_login as user_login
 import backend.hide_console as hide_console
 import backend.logger as logger
+import backend.server.eel_expose as expose
 
 
 # Initialize python eel
@@ -28,12 +26,6 @@ test_db = db.test_connection()
 if not test_db:
     raise Exception("Database connection failed.")
 
-# Fallback function to close the Eel session completely when the browser window is closed.
-# Issue: after closing browser window, py script might still run in the background
-def close_callback(route, websockets):
-    if not websockets:
-        print("No active Eel sessions. Exiting...")
-        os._exit(0)
 
 #smooth-love-potion = SLP
 #axie-infinity = AXS
@@ -50,31 +42,21 @@ def server_static(filepath):
 
 
 # Expose python functions to JavaScript
-@eel.expose
-def get_env(variable: str) -> str:
-    return env.get_env(variable)
-
-@eel.expose
-def login_scholar(id: str) -> bool:
-    return user_login.login_scholar(id)
-
-@eel.expose
-def login_manager(inputID: str, inputName: str) -> int:
-    return user_login.login_manager(inputID, inputName)
-
+expose.register_exposed_functions()
 
 
 if __name__ == '__main__':
     try:
-        logger.logging.info("Python eel app launching...")
+        
+        logger.logging.info("Eel session running.")
 
         eel.start('login.html', 
                   mode='chrome', 
                   host='localhost', 
                   port=8000, 
-                  cmdline_args=['--start-maximized', '--disable-web-security'], 
-                  shutdown_delay=1,
-                #   close_callback=close_callback
+                  cmdline_args=['--start-maximized'], 
+                  shutdown_delay=3,
+                  disable_cache=True,
         )
         
     except OSError:
