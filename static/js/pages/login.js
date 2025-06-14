@@ -120,7 +120,7 @@ export function redirectToDashboard(role) {
     // Redirect after a short delay
     setTimeout(() => {
       const redirectMap = {
-        manager: "index.html",
+        manager: "dashboard.html",
         scholar: "quick-check.html",
       };
       window.location.href = redirectMap[role];
