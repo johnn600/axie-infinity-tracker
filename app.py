@@ -38,6 +38,10 @@ if platform.system() == 'Windows':
 # Use Bottle to serve static files rather than Eel in order to load the files faster
 @bottle.route('/static/<filepath:path>')
 def server_static(filepath):
+    response = bottle.response
+    response.set_header('Cache-Control', 'no-cache, no-store, must-revalidate')
+    response.set_header('Pragma', 'no-cache')
+    response.set_header('Expires', '0')
     return bottle.static_file(filepath, root='static')
 
 
